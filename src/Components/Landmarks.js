@@ -31,7 +31,7 @@ function Landmarks() {
   const toggleShowMore = () => setShowMore(!showMore);
 
   return (
-    <div className="container items-center mt-14 lg:mt-28">
+    <div className="container items-center mt-14 lg:mt-28" id="landmarks">
       <h2 className=" text-3xl  ">
         <strong>Discover a new landmark</strong>
       </h2>
