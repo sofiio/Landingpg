@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
+import { useTranslation, initReactI18next } from "react-i18next";
 
 function DropDownMenu({ dropDown }) {
+  const { t } = useTranslation();
   return (
     <div
       className={
@@ -23,7 +25,7 @@ function DropDownMenu({ dropDown }) {
               offset={-150}
               duration={500}
             >
-              Home
+              {t('home')}
             </Link>
           </li>
 
@@ -35,7 +37,7 @@ function DropDownMenu({ dropDown }) {
               offset={-150}
               duration={500}
             >
-              Tours
+              {t('tours')}
             </Link>
           </li>
           <li className="block hover:bg-red-500 px-4 py-2 cursor-pointer">
@@ -46,7 +48,7 @@ function DropDownMenu({ dropDown }) {
               offset={-150}
               duration={500}
             >
-              Hotels
+              {t('hotels')}
             </Link>
           </li>
           <li className="block hover:bg-red-500 px-4 py-2 cursor-pointer">
@@ -57,7 +59,7 @@ function DropDownMenu({ dropDown }) {
               offset={-150}
               duration={500}
             >
-              Explore
+              {t('explore')}
             </Link>
           </li>
           <li className="block px-4 py-2 hover:bg-red-500 cursor-pointer">
@@ -68,7 +70,7 @@ function DropDownMenu({ dropDown }) {
               offset={-150}
               duration={500}
             >
-              Environment
+              {t('environment')}
             </Link>
           </li>
         </ul>

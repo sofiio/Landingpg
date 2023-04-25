@@ -30,23 +30,25 @@ function Header() {
       </div>
       <ul className="hidden sm:flex flex-1 justify-center items-center gap-12  text-xs  text-bookmark-blue">
         <div className="flex lg:gap-12 sm:gap-6 md:gap-10">
-          <li className="cursor-pointer hover:text-red-700"><Link to="main" spy={true} smooth={true} offset={-150} duration={500}>{t('home')}</Link></li>
-          <li className="cursor-pointer hover:text-red-700" ><Link to="tours" spy={true} smooth={true} offset={-150} duration={500}>{t('tours')}</Link></li>
-          <li className="cursor-pointer hover:text-red-700"><Link to="hotels" spy={true} smooth={true} offset={-150} duration={500}>{t('hotels')}</Link></li>
-          <li className="cursor-pointer hover:text-red-700"><Link to="landmarks" spy={true} smooth={true} offset={-150} duration={500}>{t('explore')}</Link></li>
-          <li className="cursor-pointer hover:text-red-700"><Link to="environment" spy={true} smooth={true} offset={-150} duration={500}>{t('environment')}</Link></li>
+          <li className="cursor-pointer hover:text-red-700 font-bold"><Link to="main" spy={true} smooth={true} offset={-150} duration={500}>{t('home')}</Link></li>
+          <li className="cursor-pointer hover:text-red-700  font-bold" ><Link to="tours" spy={true} smooth={true} offset={-150} duration={500}>{t('tours')}</Link></li>
+          <li className="cursor-pointer hover:text-red-700  font-bold"><Link to="hotels" spy={true} smooth={true} offset={-150} duration={500}>{t('hotels')}</Link></li>
+          <li className="cursor-pointer hover:text-red-700  font-bold"><Link to="landmarks" spy={true} smooth={true} offset={-150} duration={500}>{t('explore')}</Link></li>
+          <li className="cursor-pointer hover:text-red-700  font-bold"><Link to="environment" spy={true} smooth={true} offset={-150} duration={500}>{t('environment')}</Link></li>
         </div>
       </ul>
 
 
 
-      <div className="flex justify-end mx-4 items-center gap-12 sm:gap-4 text-xs text-bookmark-blue">
+      <div className="flex  justify-end mx-4 items-center gap-12 sm:gap-4 text-xs text-bookmark-blue">
+        <div>
         <div className="flex"  onClick={ToggleLanguageDropDown} >
-          <h2 className="cursor-pointer hover:text-red-700">{t('en')}</h2>
+          <h2 className="cursor-pointer hover:text-red-700 font-bold">{t('Lan')}</h2>
           <img src="/Vector11.svg" alt="" className=" cursor-pointer"/>
         </div>
         <LanguageDropDown  languageDropDown={ languageDropDown} setLanguageDropDown={setLanguageDropDown} />
-        <h2 className="cursor-pointer hover:text-red-700">{t('log_in')}</h2>
+        </div>
+        <h2 className="cursor-pointer hover:text-red-700 font-bold">{t('log_in')}</h2>
       </div>
 
 

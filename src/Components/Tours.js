@@ -1,43 +1,46 @@
 import React from "react";
 import Product from "./Product";
 import { useState } from "react";
+import { useTranslation, initReactI18next } from "react-i18next";
 
 function Tours() {
+  const { t } = useTranslation();
+
   const products = [
     {
       id: "1",
       image: "Rectangle6.svg",
-      title: "Sighnagi",
+      title: t('Sighnagi'),
       price: "40$",
     },
     {
       id: "2",
       image: "Rectangle7.svg",
-      title: "Tskaltubo",
+      title: t('Tskaltubo'),
       price: "60$",
     },
     {
       id: "3",
       image: "Rectangle8.svg",
-      title: "Gordi",
+      title: t('Gordi'),
       price: "30$",
     },
     {
       id: "4",
       image: "Rectangle9.svg",
-      title: "Sataflia",
+      title: t('Sataflia'),
       price: "75$",
     },
     {
       id: "5",
       image: "Rectangle15.svg",
-      title: "Racha",
+      title: t('Racha'),
       price: "120$",
     },
     {
       id: "6",
       image: "Rectangle17.svg",
-      title: "Lechkhumi",
+      title: t('Lechkhumi'),
       price: "240$",
     },
   ];
@@ -49,7 +52,7 @@ function Tours() {
   return (
     <div className="container items-center mt-14 lg:mt-28 " id="tours">
       <h2 className=" text-3xl  ">
-        <strong>Tours around the country</strong>
+        <strong>{t('Tours around the country')}</strong>
       </h2>
       <button className="text-bookmark-purple mt-4 " onClick={toggleShowMore}>
         {" "}

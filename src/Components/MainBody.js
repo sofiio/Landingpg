@@ -2,30 +2,34 @@ import React from "react";
 import Hotels from "./Hotels";
 import Landmarks from "./Landmarks";
 import Tours from "./Tours";
+import { useTranslation, initReactI18next } from "react-i18next";
 
 function MainBody() {
+
+  const { t } = useTranslation();
+
   return (
     <div className=" " id="main">
       <img src="/Frame12.svg" alt="" className="w-full" />
       <div className="container flex flex-row-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
         {/* first section/buttons */}
 
-        <div className="flex flex-col sm:flex-row gap-8 mx-auto ">
+        <div className="flex flex-col sm:flex-row gap-6 md:gap-2 lg:gap-6 mx-auto ">
           <button className="hover:bg-red-700 hover:text-white w-[220px] sm:w-[130px] md:w-[170px] lg:w-[220px] h-[60px] rounded-full border-2 flex gap-2 items-center justify-center">
-            <img src="/bus1.svg" alt="" />
-            Guides
+            <img src="/bus1.svg" alt="" className="sm:hidden md:block"/>
+            {t('Guides')}
           </button>
-          <button className="hover:bg-red-700 hover:text-white w-[220px] sm:w-[130px] md:w-[170px]  lg:w-[220px]  h-[60px]  rounded-full border-2 flex gap-2 items-center justify-center">
-            <img src="/bus2.svg" alt="" />
-            Transport
+          <button className="hover:bg-red-700 hover:text-white w-[220px] sm:w-[140px] md:w-[190px]  lg:w-[220px]  h-[60px]  rounded-full border-2 flex gap-2 items-center justify-center">
+            <img src="/bus2.svg" alt="" className="sm:hidden md:block" />
+            {t('Transport')}
           </button>
           <button className="hover:bg-red-700 hover:text-white w-[220px] sm:w-[130px] md:w-[170px]  lg:w-[220px]  h-[60px] rounded-full border-2 flex gap-2 items-center justify-center">
-            <img src="/bus3.svg" alt="" />
-            Equipment
+            <img src="/bus3.svg" alt="" className="sm:hidden md:block" />
+            {t('Equipment')}
           </button>
           <button className="hover:bg-red-700 hover:text-white w-[220px] sm:w-[130px] md:w-[170px]  lg:w-[220px]  h-[60px]  rounded-full border-2 flex gap-2 items-center justify-center">
-            <img src="/bus4.svg" alt="" />
-            Food
+            <img src="/bus4.svg" alt="" className="sm:hidden md:block"/>
+            {t('Food')}
           </button>
         </div>
       </div>
@@ -33,7 +37,7 @@ function MainBody() {
       {/*second section /  your preferences */}
       <div className="container items-center mt-14 lg:mt-28">
         <h2 className=" text-3xl  ">
-          <strong>Your preferences</strong>
+          <strong>{t('Your preferences')}</strong>
         </h2>
 
         <div className="flex gap-2  lg:gap-2 lg:flex-col xl:flex-row mt-6">
@@ -66,7 +70,7 @@ function MainBody() {
       {/* sixth section/ Have extreme fun */}
       <div className="container items-center mt-14 lg:mt-28 " id="environment">
         <h2 className=" text-3xl  ">
-          <strong>Have extreme fun</strong>
+          <strong>{t('Have extreme fun')}</strong>
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-32 lg:gap-16 xl:gap-32 mt-4">

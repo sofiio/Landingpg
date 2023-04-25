@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation, initReactI18next } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="w-full bg-white  ">
     <nav className="container font-Poppins flex flex-col items-center  py-4 gap-12 mt-24">
@@ -14,43 +16,43 @@ function Footer() {
 
     
     <div className='flex flex-col lg:flex-row xl:gap-28 gap-12 '>
-    <div className='w-[234px] h-[183px] text-[#5A5A5A]'><strong>About us</strong>
+    <div className='w-[234px] h-[183px] text-[#5A5A5A]'><strong>{t('About us')}</strong>
     <div className='mt-4'>
-      <h2>What is our platform about</h2>
-      <h2>Tel: +995 598 472 572</h2>
-      <h2>Geotrevelfree@gmail.com</h2>
-      <h2>Advertising</h2>
-      <h2>Support service</h2>
+      <h2>{t('What is our platform about')}</h2>
+      <h2>{t('Tel: +995 598 472 572')}</h2>
+      <h2>{t('Geotrevelfree@gmail.com2')}</h2>
+      <h2>{t('Advertising')}</h2>
+      <h2>{t('Support service')}</h2>
     </div>
     </div>
-    <div className='w-[147px] h-[183px] text-[#5A5A5A]'><strong>The main thing</strong>
+    <div className='w-[147px] h-[183px] text-[#5A5A5A]'><strong>{t('The main thing')}</strong>
     <div className='mt-4'>
-      <h2>All regions</h2>
-      <h2>Tours</h2>
-      <h2>Hostels</h2>
-      <h2>Explore</h2>
-      <h2>Recreation</h2>
-      <h2>Entertainment</h2>
+      <h2>{t('All regions')}</h2>
+      <h2>{t('Tours')}</h2>
+      <h2>{t('Hostels')}</h2>
+      <h2>{t('Explore')}</h2>
+      <h2>{t('Recreation')}</h2>
+      <h2>{t('Entertainment')}</h2>
     </div>
     </div>
-    <div className='w-[237px] h-[183px] text-[#5A5A5A]'><strong>Popular destinations</strong>
+    <div className='w-[237px] h-[183px] text-[#5A5A5A]'><strong>{t('Popular destinations')}</strong>
     <div className='mt-4'>
-      <h2>The road on top of Khvamli</h2>
-      <h2>Mountainous Adjara</h2>
-      <h2>Kazbegi with your eyes</h2>
-      <h2>Tskaltubo - infinite beauty</h2>
-      <h2>Walk in Mestia</h2>
-      <h2>Pshav-Khevsureti</h2>
+      <h2>{t('The road on top of Khvamli')}</h2>
+      <h2>{t('Mountainous Adjara')}</h2>
+      <h2>{t('Kazbegi with your eyes')}</h2>
+      <h2>{t('Tskaltubo - infinite beauty')}</h2>
+      <h2>{t('Walk in Mestia')}</h2>
+      <h2>{t('Pshav-Khevsuretit')}</h2>
     </div>
     </div>
-    <div className='w-[152px] h-[183px] text-[#5A5A5A]'><strong>About Georgia</strong>
+    <div className='w-[152px] h-[183px] text-[#5A5A5A]'><strong>{t('About Georgia')}</strong>
     <div className='mt-4'>
-      <h2>Historical articles</h2>
-      <h2>Culture</h2>
-      <h2>Cooking</h2>
-      <h2>Winemaking</h2>
-      <h2>Holidays</h2>
-      <h2>Museums</h2>
+      <h2>{t('Historical articles')}</h2>
+      <h2>{t('Culture')}</h2>
+      <h2>{t('Cooking')}</h2>
+      <h2>{t('Winemaking')}</h2>
+      <h2>{t('Holidays')}</h2>
+      <h2>{t('Museums')}</h2>
     </div>
     </div>
     </div>
