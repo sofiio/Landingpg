@@ -2,10 +2,11 @@ import { Link } from "react-scroll";
 import { useTranslation, initReactI18next } from "react-i18next";
 import i18next from "i18next";
 
-function LanguageDropDown({ languageDropDown }) {
+function LanguageDropDown({ languageDropDown, setLanguageDropDown }) {
  
   function handleClick(lang) {
     i18next.changeLanguage(lang);
+    setLanguageDropDown("none")
   }
 
   return (
