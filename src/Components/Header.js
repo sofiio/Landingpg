@@ -9,6 +9,7 @@ import { useTranslation, initReactI18next } from "react-i18next";
 function Header() {
   const [dropDown, setDropDown] = useState("none");
   const [languageDropDown, setLanguageDropDown] = useState("none");
+  const [language, setLanguage] = useState("en")
 
   function ToggleDropDown() {
     if (dropDown === "none") setDropDown("block");
@@ -21,6 +22,7 @@ function Header() {
   }
 
   const { t } = useTranslation();
+  
 
   return (
     <div className="w-full bg-white sticky z-10 top-0">

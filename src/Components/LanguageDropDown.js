@@ -9,6 +9,7 @@ function LanguageDropDown({ languageDropDown, setLanguageDropDown }) {
     setLanguageDropDown("none")
   }
 
+  
   return (
     <div
       className={
@@ -17,20 +18,26 @@ function LanguageDropDown({ languageDropDown, setLanguageDropDown }) {
           : "bg-white rounded-lg fixed top-[100px] w-[100px] z-10 right-[-100%]  "
       }
     >
-      <div className="bg-black rounded-md">
+      <div className="bg-black rounded-md w-[60px]">
       <div
         style={{ display: `${languageDropDown}` }}
         className="z-10 h-[30px]
           dark:bg-gray-700 flex text-center"
       >
-        <h2 onClick={()=>handleClick('geo')} className="text-white hover:text-red-400 uppercase text-xs pt-2 cursor-pointer">Geo</h2>
+        <div className="flex items-center  space-x-2 pt-2 pl-1">
+        <h2 onClick={()=>handleClick('geo')} className="text-white hover:text-red-400 uppercase text-xs  cursor-pointer">Geo</h2>
+        <img src="/flagg.svg" alt="" className="w-[20px] h-[20px]"/>
+        </div>
       </div>
       <div
         style={{ display: `${languageDropDown}` }}
         className="z-10 h-[30px]
          dark:bg-gray-700 flex text-center"
       >
-        <h2  onClick={()=>handleClick('en')} className="text-white hover:text-red-400  uppercase text-xs pt-2 cursor-pointer">Eng</h2>
+         <div className="flex items-center  space-x-2 pt-2 pl-1">
+        <h2  onClick={()=>handleClick('en')} className="text-white hover:text-red-400  uppercase text-xs  cursor-pointer">Eng</h2>
+        <img src="/flage.svg" alt="" className="w-[20px] h-[20px]"/>
+      </div>
       </div>
       </div>
     </div>
