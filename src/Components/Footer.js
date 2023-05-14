@@ -45,7 +45,7 @@ function Footer() {
       <h2>{t('Pshav-Khevsuretit')}</h2>
     </div>
     </div>
-    <div className='w-[152px] h-[183px] text-[#5A5A5A]'><strong>{t('About Georgia')}</strong>
+    <div className='w-[152px] h-[183px] mt-6 lg:mt-0 text-[#5A5A5A]'><strong>{t('About Georgia')}</strong>
     <div className='mt-4'>
       <h2>{t('Historical articles')}</h2>
       <h2>{t('Culture')}</h2>
